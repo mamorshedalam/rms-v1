@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.ico" />
+     <title>Result Publishing</title>
+     <!-- CSS -->
+     <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+     <!-- ========== MAIN-WRAPPER ========== -->
+     <div id="main-wrapper">
+
+          <!-- ========== CONTAINER ========== -->
+          <section id="container" class="container" style="display: block">
+               <div class="section-header">
+                    <img src="./assets/img/logo.png" alt="Logo">
+               </div>
+               <div class="search-div">
+                    <form action="" id="search-form">
+                         <div class="input-group">
+                              <label for="semester">Semester</label>:
+                              <select name="semester" id="search-semester" required>
+                                   <option hidden>Semester</option>
+                                   <option value="1">1st</option>
+                                   <option value="2">2nd</option>
+                                   <option value="3">3rd</option>
+                                   <option value="4">4th</option>
+                                   <option value="5">5th</option>
+                                   <option value="6">6th</option>
+                                   <option value="7">7th</option>
+                              </select>
+                         </div>
+                         <div class="input-group">
+                              <label for="roll">Roll No.</label>:
+                              <input type="text" name="roll" id="search-roll" required>
+                         </div>
+                         <div class="input-group">
+                              <label for="register">Reg. No.</label>:
+                              <input type="text" name="register" id="search-register" required>
+                         </div>
+                         <div class="input-group">
+                              <label for="verify"> <span id="verify-first"></span> + <span id="verify-last"></span></label>:
+                              <input type="text" name="verify" id="search-verify" required>
+                         </div>
+                         <div class="input-group">
+                              <input type="reset" name="reset" value="Reset">
+                              <input type="submit" name="submit" id="submit" value="Submit">
+                         </div>
+                    </form>
+               </div>
+          </section>
+          <section id="result" class="result" style="display: none">
+               <div id="result-div" class="result-div">
+                    <h4><span id="student-semester"></span> SEMESTER EXAMINATION RESULT</h4>
+                    <div class="info-div">
+                         <table class="student-info">
+                              <tr>
+                                   <td>Technology</td>
+                                   <td>:</td>
+                                   <td id="student-tech"></td>
+                              </tr>
+                              <tr>
+                                   <td>Student's Name</td>
+                                   <td>:</td>
+                                   <td id="student-name"></td>
+                              </tr>
+                              <tr>
+                                   <td>Father's Name</td>
+                                   <td>:</td>
+                                   <td id="student-father"></td>
+                              </tr>
+                              <tr>
+                                   <td>Mother's Name</td>
+                                   <td>:</td>
+                                   <td id="student-mother"></td>
+                              </tr>
+                              <tr>
+                                   <td>Roll No.</td>
+                                   <td>:</td>
+                                   <td id="student-roll"></td>
+                              </tr>
+                              <tr>
+                                   <td>Register No.</td>
+                                   <td>:</td>
+                                   <td id="student-register"></td>
+                              </tr>
+                              <tr>
+                                   <td>Session</td>
+                                   <td>:</td>
+                                   <td id="student-session"></td>
+                              </tr>
+                         </table>
+                    </div>
+                    <div class="marks-div">
+                         <table id="result-table" class="student-marks">
+                              <tr>
+                                   <th>SL<br />No</th>
+                                   <th>Subject<br />Code</th>
+                                   <th>Subject Name</th>
+                                   <th>Full<br />Mark</th>
+                                   <th>Obtained<br />Mark</th>
+                                   <th>Letter<br />Grade</th>
+                                   <th>Grade<br />Point</th>
+                              </tr>
+                         </table>
+                    </div>
+               </div>
+               <button id="printBtn" onclick="resultPrint(event)">Print</button>
+          </section>
+          <!-- ========== CONTAINER END ========== -->
+
+     </div>
+     <!-- ========== MAIN-WRAPPER END ========== -->
+
+     <!-- SCRIPT -->
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+     <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

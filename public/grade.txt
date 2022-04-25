@@ -1,0 +1,57 @@
+<table class="garde-range">
+                              <tr>
+                                   <th>Range of Marks <i>(percentage)</i></th>
+                                   <th>Garde</th>
+                                   <th>Point</th>
+                              </tr>
+                              <tr>
+                                   <td>80 or above</td>
+                                   <td>A+</td>
+                                   <td>4.00</td>
+                              </tr>
+                              <tr>
+                                   <td>75 - below 80</td>
+                                   <td>A</td>
+                                   <td>3.75</td>
+                              </tr>
+                              <tr>
+                                   <td>70 - below 75</td>
+                                   <td>A-</td>
+                                   <td>3.50</td>
+                              </tr>
+                              <tr>
+                                   <td>65 - below 70</td>
+                                   <td>B+</td>
+                                   <td>3.25</td>
+                              </tr>
+                              <tr>
+                                   <td>60 - below 65</td>
+                                   <td>B</td>
+                                   <td>3.00</td>
+                              </tr>
+                              <tr>
+                                   <td>55 - below 60</td>
+                                   <td>B-</td>
+                                   <td>2.75</td>
+                              </tr>
+                              <tr>
+                                   <td>50 - below 55</td>
+                                   <td>C+</td>
+                                   <td>2.50</td>
+                              </tr>
+                              <tr>
+                                   <td>45 - below 50</td>
+                                   <td>C</td>
+                                   <td>2.25</td>
+                              </tr>
+                              <tr>
+                                   <td>40 - below 45</td>
+                                   <td>D</td>
+                                   <td>2.00</td>
+                              </tr>
+                              <tr>
+                                   <td>below 40</td>
+                                   <td>F</td>
+                                   <td>0.00</td>
+                              </tr>
+                         </table>

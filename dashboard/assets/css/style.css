@@ -1,0 +1,255 @@
+/* ========== ROOT ========== */
+:root {
+  --FW-LIGHT: 300;
+  --FW-REG: 400;
+  --FW-BOLD: 700;
+  --C-WHITE: #ffffff;
+  --C-ASH: #878787;
+  --C-RED: #fa3733;
+  --C-YELLOW: #ffb606;
+  --C-GREEN: #7ad03a;
+  --C-BLUE: #0693e3;
+  --C-DEEP: #010ba0;
+  --C-DARK: #212121;
+  --C-BLACK: #000000;
+}
+/* ========== ROOT END ========== */
+
+/* ========== DEFAULT STYLE ========== */
+body {
+  font-family: sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  box-sizing: border-box !important;
+}
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+/* ========== DEFAULT STYLE END ========== */
+
+/* ========== NAVBAR SECTION ========== */
+.navbar {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  padding: 10px 50px;
+  align-items: center;
+  background-color: var(--C-WHITE);
+  box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+.navbar .logo {
+  width: 10%;
+}
+.navbar img {
+  width: 85px;
+}
+.navbar h1 {
+  width: 90%;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/* ========== NAVBAR SECTION END ========== */
+
+/* ========== CONTAINER SECTION END ========== */
+.container {
+  display: flex;
+}
+
+/* ========== SIDEBAR DIV ========== */
+.sidebar {
+  width: 250px;
+  height: 85vh;
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  background-color: var(--C-WHITE);
+  box-shadow: 15px 0px 15px -15px rgba(0, 0, 0, 0.5);
+}
+.sidebar a {
+  display: block;
+  cursor: pointer;
+  padding: 10px 15px;
+  position: relative;
+  text-decoration: none;
+  color: var(--C-BLACK);
+  font-weight: var(--FW-BOLD);
+  transition: color linear 0.3s;
+}
+.sidebar a::after {
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  height: 3px;
+  content: "";
+  position: absolute;
+  transition: width linear 0.4s;
+  background-color: var(--C-BLUE);
+}
+.sidebar a:hover::after {
+  width: 100%;
+  transition: width linear 0.4s;
+}
+.sidebar a:hover {
+  color: var(--C-BLUE);
+  transition: color linear 0.3s;
+}
+.sidebar .active {
+  color: var(--C-BLUE);
+}
+.sidebar .active::after {
+  width: 100%;
+  transition: width linear 0.4s;
+}
+.sidebar button {
+  font-size: 16px;
+  margin-top: auto;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  color: var(--C-RED);
+  font-weight: var(--FW-BOLD);
+}
+/* ========== SIDEBAR DIV END ========== */
+
+/* ========== CONTENT DIV ========== */
+.content-wrapper {
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 20px 20px 0;
+  background-color: var(--C-ASH);
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.content-wrapper .content-inner {
+  min-height: 82vh;
+  padding: 20px 30px;
+  background-color: var(--C-WHITE);
+}
+.file-div{
+  margin-bottom: 20px;
+}
+.file-div label{
+  background-color: var(--C-YELLOW);
+  padding: 7px 15px;
+  color: var(--C-WHITE);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.file-div input{
+  display: none;
+}
+.input-box {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--C-ASH);
+}
+.input-box .input-group:last-child {
+  margin-left: auto;
+}
+.input-box label {
+  font-size: 16px;
+  font-weight: var(--FW-BOLD);
+}
+.input-box input,
+.input-box select {
+  width: 120px;
+  margin: 0 15px;
+  font-size: 14px;
+  padding: 5px 7px;
+}
+.btn {
+  padding: 7px 15px;
+  margin-left: 5px;
+  color: var(--C-WHITE);
+  font-weight: var(--FW-BOLD);
+  transition: color linear 0.3s;
+}
+.update-btn {
+  background-color: var(--C-YELLOW);
+}
+.add-btn {
+  background-color: var(--C-GREEN);
+}
+.find-btn {
+  background-color: var(--C-BLUE);
+}
+.remove-btn {
+  background-color: var(--C-RED);
+}
+.input-box button:hover {
+  color: var(--C-BLACK);
+  transition: color linear 0.3s;
+}
+.input-div table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.input-div table th,
+.input-div table td {
+  padding: 10px 5px;
+  text-align: center;
+  border: 1px solid var(--C-ASH);
+}
+.input-div table input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 16px;
+}
+.input-div table a {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  color: var(--C-WHITE);
+  font-weight: var(--FW-BOLD);
+  background-color: var(--C-GREEN);
+}
+.input-div table a:last-child {
+  background-color: var(--C-RED);
+  margin-left: 5px;
+}
+.input-div table tr:nth-child(2){
+  display: none;
+}
+
+/* ========== STUDENT INFO ========== */
+.student-info .input-div table th:nth-child(2) {
+  width: 12%;
+}
+.student-info .input-div table th:nth-child(3) {
+  width: 13%;
+}
+/* ========== STUDENT INFO END ========== */
+
+/* ========== STUDENT RESULT ========== */
+.subject-box .input-group:nth-child(1) input {
+  width: 300px;
+}
+.subject-box .input-group:nth-child(2) input {
+  width: 80px;
+}
+.subject-box .input-group:nth-child(3) input {
+  width: 80px;
+}
+.subject-box .input-group:nth-child(4) {
+  display: flex;
+  justify-content: flex-end;
+}
+.student-result .input-div {
+  width: 600px;
+}
+.student-result .input-div td input {
+  text-align: center;
+}
+/* ========== STUDENT RESULT END ========== */
+/* ========== CONTENT DIV END ========== */
+/* ========== CONTAINER SECTION END ========== */

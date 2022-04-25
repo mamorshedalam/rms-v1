@@ -1,0 +1,197 @@
+/* ========== ROOT ========== */
+:root {
+  --FW-LIGHT: 300;
+  --FW-REG: 400;
+  --FW-BOLD: 700;
+  --C-WHITE: #ffffff;
+  --C-ASH: #878787;
+  --C-RED: #fa3733;
+  --C-YELLOW: #ffb606;
+  --C-GREEN: #7ad03a;
+  --C-BLUE: #0693e3;
+  --C-DEEP: #010ba0;
+  --C-DARK: #212121;
+  --C-BLACK: #000000;
+}
+/* ========== ROOT END ========== */
+
+/* ========== DEFAULT STYLE ========== */
+body {
+  background-color: var(--C-ASH);
+  font-family: sans-serif;
+  font-size: 14px;
+}
+* {
+  outline: none !important;
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+}
+/* ========== DEFAULT STYLE END ========== */
+
+/* ========== MAIN-WRAPPER ========== */
+#main-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* ========== MAIN-WRAPPER END ========== */
+
+/* ========== CONTAINER ========== */
+.container {
+  background-color: var(--C-WHITE);
+  max-width: 500px;
+  width: 90%;
+  padding: 10px 30px 25px;
+  margin: auto;
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 10px 20px 15px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .container {
+    padding: 5px 10px 10px;
+  }
+}
+
+/* ========== SECTION HEADER ========== */
+.section-header {
+  padding: 15px 0 20px;
+  text-align: center;
+}
+.section-header img {
+  width: 85px;
+}
+.section-header h1 {
+  font-size: 21px;
+  padding-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .section-header {
+    padding: 10px 0 15px;
+  }
+  .section-header img {
+    width: 75px;
+  }
+  .section-header h1 {
+    font-size: 18px;
+    padding-top: 5px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .section-header img {
+    width: 70px;
+  }
+  .section-header h1 {
+    font-size: 15px;
+  }
+}
+/* ========== SECTION HEADER END ========== */
+
+/* ========== SEARCH DIV ========== */
+.search-div {
+  border: 2px solid var(--C-ASH);
+  padding: 20px 20px 10px;
+}
+.search-div form .input-group {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.search-div form .input-group label {
+  width: 30%;
+  font-size: 16px;
+}
+.search-div form .input-group input,
+.search-div form .input-group select {
+  width: 70%;
+  font-size: 14px;
+  padding: 5px 7px;
+  margin-left: 15px;
+}
+.search-div form .input-group:last-child {
+  justify-content: flex-end;
+}
+.search-div form .input-group:last-child input {
+  width: 70px;
+}
+@media only screen and (max-width: 600px) {
+  .search-div {
+    padding: 15px 15px 10px;
+  }
+  .search-div form .input-group {
+    margin-bottom: 10px;
+  }
+  .search-div form .input-group label {
+    font-size: 14px;
+  }
+  .search-div form .input-group input,
+  .search-div form .input-group select {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .search-div form .input-group:last-child input {
+    width: 50px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .search-div {
+    padding: 10px 10px 5px;
+  }
+}
+/* ========== SEARCH DIV END ========== */
+
+/* ========== CONTAINER END ========== */
+
+/* ========== RESULT  ========== */
+.result {
+  background-color: var(--C-WHITE);
+  max-width: 100%;
+  width: 500px;
+  padding: 25px 20px;
+  margin: 30px auto 0;
+  flex-wrap: wrap;
+}
+.result h4 {
+  text-align: center;
+  font-size: 21px;
+}
+.result #printBtn{
+  padding: 5px 15px;
+  margin-left: auto;
+  margin-top: 25px;
+}
+.result .info-div {
+  padding: 25px 0;
+}
+.info-div .student-info {
+  font-size: 16px;
+}
+.info-div .student-info td {
+  padding: 5px 0;
+}
+.info-div .student-info td:nth-child(2) {
+  padding: 0 10px;
+  font-weight: var(--FW-BOLD);
+}
+.marks-div .student-marks {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.marks-div .student-marks th,
+.marks-div .student-marks td {
+  border: 1px solid var(--C-ASH);
+  padding: 5px;
+  text-align: center;
+}
+.marks-div .student-marks tr:last-child{
+     font-weight: var(--FW-BOLD);
+}
+.marks-div .student-marks td:nth-child(3){
+     text-align: left;
+}
+/* ========== RESULT END ========== */
