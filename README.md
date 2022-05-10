@@ -1,5 +1,11 @@
 ## Result Management System Version.1
-RMS is a result management system, that can calculate marks and generate the result by itself. And can publish the result to the students. After entering every subject’s mark admin can public the result page to the student and students can search their results by themself. 
+Most institutes are facing problems to publish examination results. They have to collect every individual subject mark after the exam and calculate the marks and generate the result manually. It’s very time-consuming work and many workforces need this work. 
+
+
+No more suffering. It's a revolutionary time. RMS is here to make it automatic and make it easier. RMS is a result management system, that can calculate marks and generate the result by itself. And can publish the result to the students. After entering every subject’s mark admin can public the result page to the student and students can search their results by themself.  
+
+RMS is a program, not a complete website. It’s can implement on any existing website. And we don’t have to worry about server-side, because this program only needs some database table with a proper schema. RMS’s all calculations and functional are on Front-end by Vanilla JavaScript. Which makes this program more confutable and easy to use.
+
 
 #### Features:
 
