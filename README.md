@@ -1,15 +1,15 @@
 ## Result Management System Version.1
-RMS is a program that use to manage academic examination result. this made with Vanilla JavaScript
+RMS is a result management system, that can calculate marks and generate the result by itself. And can publish the result to the students. After entering every subject’s mark admin can public the result page to the student and students can search their results by themself. 
 
 #### Features:
 
 - Input all student information together by excel sheet
 - Read, update, delete any student information
-- Create result for separete department & semester
+- Create result for separate department & semester
 - Read, update, delete any result 
 - Find every individual result with roll, registration & semester
-- See marksheet if the result is not fail
-- Print marksheet if the result is not fail
+- See marksheet if the result is not failed
+- Print marksheet if the result is not failed
 
 
 #### Technology:
@@ -49,7 +49,7 @@ RMS is a program that use to manage academic examination result. this made with 
  - In the end, submit result with each student numbers
 
 ##### (Find & Print Result)
- - First, find every individual result with semseter, roll, registraion
+ - First, find every individual result with semester, roll, registration
  - Then, print your marksheet
 
 Live link : https://rms-v1.herokuapp.com/
