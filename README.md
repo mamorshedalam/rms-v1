@@ -18,6 +18,39 @@ RMS is a program, not a complete website. It’s can implement on any existing w
 - Print marksheet if the result is not failed
 
 
+### Installation
+
+1. Clone repository
+
+```bash
+https://github.com/mamorshedalam/rms-v1.git
+```
+
+2. Go to the folder
+
+```bash
+cd rms-v1
+```
+
+3. Install Node packages
+
+```bash
+npm i
+```
+
+4. Run Local server with development change waching...
+
+```bash
+npm run dev
+```
+
+5. Open browser
+
+```bash
+http://localhost:4000
+```
+
+
 #### Technology:
 
  - HTML5
