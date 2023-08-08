@@ -92,6 +92,6 @@ http://localhost:4000
  - First, find every individual result with semester, roll, registration
  - Then, print your marksheet
 
-Live link : https://rms-v1.herokuapp.com/
+Live link : https://rms-v1-ten.vercel.app/
 
-Dashboard Link: https://rms-v1.herokuapp.com/dashboard/
+Dashboard Link: https://rms-v1-ten.vercel.app/dashboard
